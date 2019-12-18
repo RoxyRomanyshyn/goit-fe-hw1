@@ -1,32 +1,41 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
 body {
-    margin: auto;
-    width: 1050px;
     font-size: 12px;
     line-height: 21px;
 }
+div.container {
+    width: 900px;
+    margin: 0 auto;
+}
+header.paige_header {
+    padding-top: 50px;
+    padding-bottom: 42px;
+}
 .navigation {
     text-align: center;
-    margin-top: 40px; 
 }
-.navigation_item li {
+.navigation_list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+.navigation_list li {
     display: inline-block;
-    margin-right: 110px;
+    margin-right: 60px;
     text-align: center;
 }
+.navigation_list li:last-child {
+    margin-right: 0;
+}
 .navigation a {
-    width: 113px;
-    height: 42px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: #626262;
     font-family: "PlayfairDisplay-Regular";
@@ -44,14 +53,18 @@ body {
     margin: 0;
     padding: 0;
 }
+.item {
+    font-size: 0;
+}
 .item_title {
     display: inline-block; 
-    width: 480px; 
+    width: 420px; 
     padding: 14px;
-    margin-right: 24px;
+    margin-right: 60px;
     margin-left: 14px;
+    margin-bottom: 50px;
 }
-.item_title :nth-child(2n){
+.item_title:nth-child(2n) {
   margin-right: 0;  
 }
 .item_caption {
@@ -59,38 +72,40 @@ body {
     color: #8a8a8aee;
     font-weight: 300;
 }
-h1 {
-    width: 420px;
-    height: 40px;
-    font-size: 30px;
+h2 {
+    margin-bottom: 20px;
+    font-size: 31px;
     color: #626262;
     font-weight: 400;
 }
 .item_title_img {
-    margin-top: 30px;
+    margin-right: 24px;
+    margin-bottom: 18px;
 }
 .item_title_about {
-    width: 420px;
-    height: 78px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 22px;
     color: #626262;
     font-weight: 400;
 }
-div {
-    display: inline-block;
-    text-align: center;
-    margin: 0;
+p.item_title_about {
+    margin-bottom: 24px;
+}
+button.container {
+    margin: 0 auto 60px;
     padding: 0;
-    width: 1050px;
 }
 .item_button {
+    display: block;
     width: 164px;
     height: 60px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
     color: #626262;
     font-family: "PlayfairDisplay-Regular";
     font-weight: 400;
     cursor: pointer;
+}
+.item_button a:hover,
+.item_button a:focus {
+    color: #414144;
 }
