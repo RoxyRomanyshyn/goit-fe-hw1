@@ -108,7 +108,8 @@ button.container {
     font-weight: 400;
     cursor: pointer;
 }
-.item_button a:hover,
-.item_button a:focus {
-    background-color: #56565c;
+.item_button:hover,
+.item_button:focus {
+    background-color: #676769;
+    color: #fff;
 }
