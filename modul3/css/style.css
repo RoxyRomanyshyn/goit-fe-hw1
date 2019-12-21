@@ -59,30 +59,31 @@ header.paige_header {
 .item_title {
     display: inline-block; 
     width: 420px; 
-    padding: 14px;
     margin-right: 60px;
-    margin-left: 14px;
     margin-bottom: 50px;
 }
 .item_title:nth-child(2n) {
   margin-right: 0;  
 }
 .item_caption {
+    margin: 0;
+    margin-bottom: 30px;
     font-size: 14px;
     color: #8a8a8aee;
     font-weight: 300;
 }
 h2 {
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 28px;
     font-size: 31px;
     color: #626262;
     font-weight: 400;
 }
 .item_title_img {
-    margin-right: 24px;
     margin-bottom: 18px;
 }
 .item_title_about {
+    margin: 0;
     font-size: 15px;
     line-height: 22px;
     color: #626262;
@@ -92,8 +93,10 @@ p.item_title_about {
     margin-bottom: 24px;
 }
 button.container {
-    margin: 0 auto 60px;
-    padding: 0;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    text-align: center;
 }
 .item_button {
     display: block;
@@ -107,5 +110,5 @@ button.container {
 }
 .item_button a:hover,
 .item_button a:focus {
-    color: #414144;
+    background-color: #56565c;
 }
