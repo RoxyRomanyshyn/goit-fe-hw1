@@ -30,22 +30,23 @@ h1 {
 }
 .logo {
     display: inline-block;
-    padding: 0;
+    padding: 4px 0 0 0;
     font-weight: 200; 
     height: 22px; 
+    font-size: 26px;
     color: #333232;
     text-decoration: none;
     text-transform: uppercase;
 }
 .logo:first-letter {
     color: #1abc9c;
+    font-weight: 800;
 }
 .site_navigation {
-    display: block;
     float: right;
     margin: 0;
-    padding: 0;
-    font-size: 10px;
+    padding: 6px 0 0 0;
+    font-size: 14px;
     list-style: none;
     text-decoration: none;
 }
@@ -56,8 +57,11 @@ h1 {
     margin-right: 20px;
 }
 .site_navigation a {
-    font-weight: 200;
-    color: #000;
+    font-size: 14px;
+    line-height: 11px;
+    color: #323232;
+    font-family: "Open Sans";
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -173,10 +177,10 @@ h2 {
 }
 .news_list {
   float: left;
-  width: 364px;
+  width: 360px;
   margin: 0;
-  padding: 0;
-  margin-right: 19px;
+  padding: 0 0 50px 0;
+  margin-right: 25px;
   list-style: none;
 }
 .news_item {
@@ -207,7 +211,6 @@ h2 {
 }
 .button_more {
     display: block;
-    margin-bottom: 50px;
     width: 160px;
     height: 50px;
     font-size: 18px;
