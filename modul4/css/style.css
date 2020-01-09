@@ -97,7 +97,7 @@ h1 {
 .products_item {
     float: left;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 38px;
     margin-bottom: 40px;    
     width: 252px;
     border: #1abc9c;
@@ -139,9 +139,10 @@ img {
     color: #fff;
     text-transform: uppercase;
 }
-.products_title:hover,
-.products_title:focus {
+.products_item li:hover .name_product .price {
     background-color: #1abc9c;
+    visibility: visible;
+    opacity: 1;
 }
 .item_news {
     margin: 0;
@@ -188,8 +189,7 @@ h2 {
     color: rgb(54, 53, 53);
 }
 .news_about {
-    margin: 0;
-    padding: 20px 10px 20px 0;
+    margin: 20px 10px 20px 0;
     font-size: 16px;
     font-weight: 600;
 }
@@ -213,13 +213,14 @@ h2 {
     display: block;
     width: 160px;
     height: 50px;
+    padding: 14px 0 0 30px;
     font-size: 18px;
     background-color: #1abc9c;
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
 }
-button:hover,
-button:focus {
+a:hover,
+a:focus {
     background-color: #8abc8c;
 }
