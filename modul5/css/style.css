@@ -1,0 +1,240 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+}
+.wrapper {
+    width: 1600px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* .container {
+    margin: 0;
+    padding: 0; */
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.page_nav {
+    padding: 38px 0;
+}
+.logo {
+    display: inline-block;
+    padding: 0 0 0 20pxs;
+    text-transform: uppercase;
+    font-weight: 200;
+    height: 22px;
+}
+.logo:first-letter {
+    color: #1abc9c;
+}
+.site_navigation {
+    float: right;
+    margin: 0;
+    padding: 0 20px 0 0;
+    margin-top: 12px;
+    font-size: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.site_navigation li {
+    float: left;
+}
+.site_navigation li:not(:last-child) {
+    margin-right: 20px;
+}
+.site_navigation a {
+    font-weight: 200;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site_navigation a:hover,
+.site_navigation a:focus {
+    color: #1abc9c;
+}
+.products {
+    position: relative;
+}
+.banner_slider {
+    position: relative;
+    margin: auto;
+    width: 1170px;
+    height: 600px;
+}
+.slider_ctrl  {  
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    background-color: #1abc9c;
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    border: none;
+    opacity: 0,8;
+    z-index: 5;
+}
+.slider_ctrl_prev {
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.slider_ctrl_next {
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slider_title {
+    position: absolute;
+    top: 30%;
+    left: 220px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    z-index: 1;
+}
+.slider_about {
+    position: absolute;
+    top: 40%;
+    left: 220px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    z-index: 1;
+}
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.banner_img {
+    position: absolute;
+    top: 0;
+    display: block;
+    filter: brightness(50%);
+}
+.item {
+    font-size: 48px;
+    margin-top: 0;
+    padding: 50px 0;
+    line-height: 94px;
+    color: #515151;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.item::after {
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 7px;
+    background-color:#1abc9c;
+    content: "";
+}
+.collection {
+    margin: 0;
+    width: 1600px;
+    background-color: #e9f0fd;
+}
+.collection_list {
+    height: 380px;
+    margin: 0;
+    padding: 0 0 0 250px;
+}
+.collection_list_item {
+    float: left;
+    position: relative;
+    list-style: none;
+    display: block;
+    margin-right: 38px;
+    width: 252px;    
+    border: #1abc9c;
+}
+.block_price li:hover .price .name_product {
+    background-color: #1abc9c;
+}
+.overley {
+position: absolute;
+width: 255px;
+height: 281px;
+background-color: #000;
+opacity: 55%;
+border: 10px solid #ffffff;
+}
+.overley_icon1 {
+    margin: 0;
+    padding: 80px 8px 10px 0;
+    float: left;
+}
+.overley_icon2 {
+    margin: 0;
+    padding: 80px 8px 10px 0;
+    float: left;
+}
+.overley_icon3 {
+    margin: 0;
+    padding: 80px 0 10px 0;
+    float: left;
+}
+.overley_icon4 {
+    background-color: #000;
+}
+img {
+    padding: 0;
+    display: block;
+  }
+  .name_product {
+      float:left;
+      width: 202px;
+      height: 41px;
+      margin: 0;
+      padding: 10px 0 0 10px;
+      font-size: 18px;
+      text-align: middle;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 0;
+      background-color: #323232;
+      text-transform: uppercase;
+  }
+  .price {
+      float:right;
+      width: 50px;
+      height: 41px;
+      margin: 0;
+      padding: 10px 0 0 10px;
+      font-size: 18px;
+      text-align: middle;
+      font-weight: 600;
+      background-color: #8c8c8c;
+      color: #fff;
+      text-transform: uppercase;
+  }
+  .container.container_footer {
+      margin: 0;
+      padding: 18px 0 0 0;
+      width: 1600px;
+      height: 88px;
+      background-color: #323232;
+      font-size: 18px;
+      color: #fefefe;
+      font-family: "Open Sans";
+      font-weight: 400;
+      text-align: center;
+  }
+span {
+      color: #1abc9c;
+  }
