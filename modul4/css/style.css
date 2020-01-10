@@ -70,8 +70,7 @@ h1 {
     color: #1abc9c;
 }
 .item {
-    margin: 0;
-    padding: 40px 0 50px 0;
+    margin-bottom: 50px;
     font-size: 48px;
     line-height: 94px;
     color: #515151;
@@ -97,10 +96,14 @@ h1 {
 .products_item {
     float: left;
     list-style: none;
+    padding-top: 24px;
     margin-right: 38px;
     margin-bottom: 40px;    
     width: 252px;
     border: #1abc9c;
+}
+.products_item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
 }
 li:nth-of-type(4n) {
     margin-right: 0;
@@ -139,11 +142,13 @@ img {
     color: #fff;
     text-transform: uppercase;
 }
-.products_item li:hover .name_product .price {
+.products_item:hover .price {
     background-color: #1abc9c;
-    visibility: visible;
-    opacity: 1;
 }
+.products_item:hover .name_product {
+    background-color: #1abc9c;
+}
+
 .item_news {
     margin: 0;
     padding: 40px 0 60px 0;
@@ -166,6 +171,7 @@ h2 {
     margin: 0;
 }
 .news {
+    margin: 0;
     font-size: 13px;
     padding: 0;
     line-height: 24px;
@@ -189,7 +195,8 @@ h2 {
     color: rgb(54, 53, 53);
 }
 .news_about {
-    margin: 20px 10px 20px 0;
+    margin: 0;
+    margin-bottom: 28px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -206,7 +213,7 @@ h2 {
 }
 .news_about_more {
     margin: 0;
-    padding: 0 20px 20px 0;
+    margin-bottom: 24px;
     font-size: 14px;
 }
 .button_more {
