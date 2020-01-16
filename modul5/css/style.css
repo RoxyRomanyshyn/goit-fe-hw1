@@ -11,16 +11,9 @@ body {
     font-size: 12px;
     line-height: 21px;
 }
-.wrapper {
-    width: 1600px;
-}
 .container {
-    width: 1170px;
+    width: 1110px;
     margin: 0 auto;
-}
-/* .container {
-    margin: 0;
-    padding: 0; */
 }
 .clearfix::after {
     display: block;
@@ -28,24 +21,26 @@ body {
     clear: both;
 }
 .page_nav {
-    padding: 38px 0;
+    padding: 38px 0 0 0;
 }
 .logo {
     display: inline-block;
-    padding: 0 0 0 20px;
     text-transform: uppercase;
-    font-weight: 200;
-    height: 22px;
+    font-weight: 400;
+    height: 42px;
+    font-size: 28px;
+
 }
 .logo:first-letter {
     color: #1abc9c;
+    font-weight: 900;
 }
 .site_navigation {
     float: right;
     margin: 0;
-    padding: 0 20px 0 0;
-    margin-top: 12px;
-    font-size: 10px;
+    padding: 0;
+    margin-top: 24px;
+    font-size: 12px;
     list-style: none;
     text-decoration: none;
 }
@@ -56,7 +51,7 @@ body {
     margin-right: 20px;
 }
 .site_navigation a {
-    font-weight: 200;
+    font-weight: 600;
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
@@ -69,9 +64,24 @@ body {
     position: relative;
 }
 .banner_slider {
+    height: 600px;
+    background-image: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.3),
+            rgba(59, 59, 59, 0.3)
+            ),
+            linear-gradient(
+            to left, 
+            rgba(51, 51, 51, 0.3),
+            rgba(22, 22, 22, 0.3)
+            ),
+            url('../img/slide4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider {
     position: relative;
-    margin: auto;
-    width: 1170px;
     height: 600px;
 }
 .slider_ctrl  {  
@@ -98,45 +108,37 @@ body {
 }
 .slider_title {
     position: absolute;
-    top: 30%;
+    margin: 0;
+    top: 35%;
     left: 220px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: 700;
     z-index: 1;
 }
 .slider_about {
     position: absolute;
-    top: 40%;
+    margin: 0;
+    top: 46%;
     left: 220px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 21px;
     z-index: 1;
 }
-.banner {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-.banner_img {
-    position: absolute;
-    top: 0;
-    display: block;
-    filter: brightness(50%);
-}
-.item {
+.name_collection {
     font-size: 48px;
     margin-top: 0;
-    padding: 50px 0;
+    padding: 0;
     line-height: 94px;
     color: #515151;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
-.item::after {
+.name_collection::after {
     margin: auto;
     display: block;
     width: 200px;
@@ -146,71 +148,104 @@ body {
 }
 .collection {
     margin: 0;
-    width: 1600px;
+    padding-top: 80px;
     background-color: #e9f0fd;
 }
 .collection_list {
-    height: 380px;
     margin: 0;
-    padding: 0 0 0 250px;
+    padding: 0;
 }
 .collection_list_item {
     float: left;
     position: relative;
     list-style: none;
     display: block;
-    margin-right: 38px;
     width: 252px;    
     border: #1abc9c;
+    padding: 50px 0 100px 0;
 }
-.block_price li:hover .price .name_product {
-    background-color: #1abc9c;
+.collection_list_item:not(:last-child) {
+    margin-right: 30px;
+}
+img {
+    display: block;
+}
+.card {
+    position: relative;
+    width: 252px;
 }
 .overley {
 position: absolute;
-width: 255px;
+width: 252px;
 height: 281px;
-background-color: #000;
+background-color: rgb(7, 7, 7);
 opacity: 55%;
 border: 10px solid #ffffff;
+opacity: 0;
 }
-.overley_icon1 {
-    margin: 0;
-    padding: 80px 8px 10px 0;
+
+.overley_icon_heart {
     float: left;
+    margin: 60px 4px 5px 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/heart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
-.overley_icon2 {
-    margin: 0;
-    padding: 80px 8px 10px 0;
+.overley_icon_lines {
     float: left;
+    margin: 60px 4px 5px 4px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/lines.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
-.overley_icon3 {
-    margin: 0;
-    padding: 80px 0 10px 0;
+.overley_icon_clock {
     float: left;
+    margin: 60px 0 5px 4px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/clock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
-.overley_icon4 {
-    background-color: #000;
+.overley_icon_add {
+    float: left;
+    margin-left: 20px;
+    width: 196px;
+    height: 60px;
+    background-image: url(../img/add\ to\ card.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
-img {
-    padding: 0;
-    display: block;
+.collection_list_item:hover .overley {
+    opacity: 0.99;
+}
+.name_product {
+    float:left;
+    width: 202px;
+    height: 41px;
+    margin: 0;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    text-align: middle;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+    background-color: #323232;
+    text-transform: uppercase;
   }
-  .name_product {
-      float:left;
-      width: 202px;
-      height: 41px;
-      margin: 0;
-      padding: 10px 0 0 10px;
-      font-size: 18px;
-      text-align: middle;
-      font-weight: 600;
-      color: #fff;
-      margin-top: 0;
-      background-color: #323232;
-      text-transform: uppercase;
-  }
-  .price {
+.price {
       float:right;
       width: 50px;
       height: 41px;
@@ -223,10 +258,8 @@ img {
       color: #fff;
       text-transform: uppercase;
   }
-  .container.container_footer {
+  .container_footer {
       margin: 0;
-      padding: 18px 0 0 0;
-      width: 1600px;
       height: 88px;
       background-color: #323232;
       font-size: 18px;
@@ -234,6 +267,10 @@ img {
       font-family: "Open Sans";
       font-weight: 400;
       text-align: center;
+  }
+  .footer_text {
+      margin: 0;
+      padding: 28px 0 0 0;
   }
 span {
       color: #1abc9c;
