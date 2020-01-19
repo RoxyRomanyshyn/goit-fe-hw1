@@ -21,13 +21,19 @@ body {
     clear: both;
 }
 .page_nav {
-    padding: 38px 0 0 0;
+    height: 100px;
+    padding: 0;
+    padding-bottom: 30px;
+    padding-top: 40px;
 }
 .logo {
-    display: inline-block;
+    float: left;
+    /* display: block; */
     text-transform: uppercase;
     font-weight: 400;
     font-size: 28px;
+    text-decoration: none;
+    color: #323232;
 
 }
 .logo:first-letter {
@@ -38,7 +44,6 @@ body {
     float: right;
     margin: 0;
     padding: 0;
-    margin-top: 24px;
     font-size: 12px;
     list-style: none;
     text-decoration: none;
@@ -107,7 +112,7 @@ body {
     transform: translateY(-50%);
     background-image: url(../img/ctrl\ next.jpg);
 }
-.slider_text {
+.slider_list {
     position: absolute;
     top: 30%;
     left: 220px;
@@ -165,7 +170,7 @@ body {
     position: relative;
     list-style: none;
     display: block;
-    width: 252px;    
+    width: 255px;    
     border: #1abc9c;
 }
 .collection_list_item:not(:last-child) {
@@ -233,6 +238,12 @@ opacity: 0;
 }
 .collection_list_item:hover .overley {
     opacity: 0.99;
+}
+.collection_list_item:hover .name_product {
+    background-color: #1abc9c;
+}
+.collection_list_item:hover .price {
+    background-color: #61d1bb;
 }
 .name_product {
     float:left;
