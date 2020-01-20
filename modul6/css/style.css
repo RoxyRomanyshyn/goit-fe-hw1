@@ -57,14 +57,6 @@ header{
     text-decoration: none;
 }
 
-/* .site_navigation a::after {
-    margin: auto;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color:rgb(26, 188, 156);
-    content: "";
-} */
 .site_navigation a:hover,
 .site_navigation a:focus {
    color: #f38181;
@@ -76,21 +68,22 @@ h2 {
     padding-top: 50px;
     font-size: 24px;
     color: #333333;
+    padding-bottom: 40px;
     font-family: 'Kaushan Script';
     font-weight: 400;
     text-align: center;
 }
-h3 {
+.item {
   margin: 0;
   font-size: 30px;
-  padding-bottom: 50px;
   font-family: 'Montserrat', Arial;
   font-weight: 700;
+  color: #141414;
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
 }
-h3::after {
+h2::after {
     margin: auto;
     display: block;
     width: 60px;
@@ -207,7 +200,7 @@ h3::after {
 }
 .services_name {
     margin: 0;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: #333333;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -235,6 +228,7 @@ h3::after {
   font-weight: 400;
   text-align: center;
 }
+
 .overlay {
     position: absolute;
     width: 380px;
@@ -251,6 +245,10 @@ h3::after {
     padding-bottom: 70px;
     justify-content: space-between;
     list-style: none;
+}
+.team_list_members {
+    transition-timing-function: linear;
+    transition-delay: 200ms;
 }
 .team_list_member {
     position: relative;
@@ -269,27 +267,38 @@ h3::after {
     font-style: italic;
     text-align: center;
 }
-.social_icons {
+.social_icon {
+    position: relative;
+    transition-timing-function: linear;
+    transition-delay: 200ms;
+}
+.social_icon_list {
     display: flex;
     position: absolute;
+    flex-direction: row;
     top: 190px;
-    left: 80px;
+    left: 30px;
     opacity: 0;   
+    list-style: none;
 }
+
 .social_icons_facebook {
+    display: block;
     width: 55px;
     height: 56px;
     padding: 0;
     border: none;
     background-image: url(../img/facebook.png);
-    background-color: rgb(149, 225, 211);
+    background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
 }
 .social_icons_twitter {
+    display: block;
     width: 55px;
     height: 56px;
     padding: 0;
+    margin-left: 1px;
     border: none;
     background-image: url(../img/twitter.png);
     background-color: #fce38a;
@@ -297,9 +306,11 @@ h3::after {
     background-repeat: no-repeat;
 }
 .social_icons_pinterest {
+    display: block;
     width: 55px;
     height: 56px;
     padding: 0;
+    margin-left: 1px;
     border: none;
     background-image: url(../img/pinterest.png);
     background-color: #fce38a;
@@ -307,9 +318,11 @@ h3::after {
     background-repeat: no-repeat;
 }
 .social_icons_instagram {
+    display: block;
     width: 55px;
     height: 56px;
     padding: 0;
+    margin-left: 1px;
     border: none;
     background-image: url(../img/instagram.png);
     background-color: #fce38a;
@@ -318,14 +331,16 @@ h3::after {
 }
 .team_list_members:hover .team_list_member_pic {
     box-shadow: 10px 10px #95e1d3;
-    transition-timing-function: linear;
-    transition-delay: 200ms;
 }
-.team_list_members:hover .social_icons {
+.team_list_members:hover .social_icon_list {
     opacity: 1;
-    transition-timing-function: linear;
-    transition-delay: 200ms;
 }
+
+.social_icon_list:hover .img {
+    background-color: rgb(149, 225, 211);
+    opacity: 1;
+}
+
 .team_list_members:hover .overlay {
     opacity: 1;
     transition-timing-function: linear;
