@@ -238,6 +238,8 @@ h2::after {
         rgba(238, 220, 119, 0.85),
         rgba(235, 124, 122, 0.85));
     opacity: 0;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .team_list {
     display: flex;
@@ -248,7 +250,7 @@ h2::after {
 }
 .team_list_members {
     transition-timing-function: linear;
-    transition-delay: 200ms;
+    transition-duration: 1s;
 }
 .team_list_member {
     position: relative;
@@ -269,8 +271,6 @@ h2::after {
 }
 .social_icon {
     position: relative;
-    transition-timing-function: linear;
-    transition-delay: 200ms;
 }
 .social_icon_list {
     display: flex;
@@ -280,6 +280,8 @@ h2::after {
     left: 30px;
     opacity: 0;   
     list-style: none;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 
 .social_icons_facebook {
@@ -292,6 +294,8 @@ h2::after {
     background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .social_icons_twitter {
     display: block;
@@ -304,6 +308,8 @@ h2::after {
     background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .social_icons_pinterest {
     display: block;
@@ -316,6 +322,8 @@ h2::after {
     background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .social_icons_instagram {
     display: block;
@@ -328,6 +336,8 @@ h2::after {
     background-color: #fce38a;
     background-position: center;
     background-repeat: no-repeat;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 .team_list_members:hover .team_list_member_pic {
     box-shadow: 10px 10px #95e1d3;
@@ -336,15 +346,13 @@ h2::after {
     opacity: 1;
 }
 
-.social_icon_list:hover .img {
+.social_icon_list a:hover {
     background-color: rgb(149, 225, 211);
-    opacity: 1;
 }
 
 .team_list_members:hover .overlay {
     opacity: 1;
-    transition-timing-function: linear;
-    transition-delay: 200ms;
+  
 }
 
 .footer_part {
