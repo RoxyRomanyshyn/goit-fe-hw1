@@ -16,18 +16,18 @@ body {
     margin: 0 auto;
 }
 header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 150px;
 }
 .page_nav {
     display: flex;
     min-height: 130px;
     padding-bottom: 50px;
+    padding-top: 30px;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
-    display: inline-block;
+    display: block;
     font-size: 32px;
     letter-spacing: 1px;
     line-height: 41px;
@@ -50,6 +50,7 @@ header {
 }
 
 .site_navigation a {
+    display: block;
     color: #222222;
     text-transform: uppercase;
     text-decoration: none;
@@ -59,6 +60,10 @@ header {
 .site_navigation a:focus {
     color: #fed136;
 }
+.services {
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
 .services_list {
     display: flex;
     margin: 0;
@@ -67,8 +72,6 @@ header {
     justify-content: space-between;
     width: 940px; 
     list-style: none;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 .services_title {
     margin: 0;
@@ -83,6 +86,7 @@ header {
 }
 .services_more {
   margin: 0;
+  padding-bottom: 40px;
   font-size: 16px;
   color: #777777;
   font-family: 'Droid Serif', Arial, Helvetica, sans-serif;
@@ -129,6 +133,8 @@ header {
 }
 
 .services_name {
+    margin: 0;
+    padding: 30px 0;
     font-size: 18px;
     letter-spacing: 0px;
     color: #222222;
@@ -137,6 +143,7 @@ header {
     text-align: center;
 }
 .services_about {
+    margin: 0;
     width: 290px;
     font-size: 14px;
     line-height: 24px;
@@ -183,9 +190,30 @@ header {
     height: 230px;
     display: flex;
     flex-wrap: wrap;
+}
+.contact_info {
+    display: flex;
+    height: 230px;
     flex-direction: column;
     justify-content: space-between;
-
+}
+input {
+    outline-color: none;
+}
+input:valid {
+    outline-color: rgb(0, 128, 0);
+}
+input:invalid {
+    outline-color: rgb(255, 0, 0);
+}
+textarea {
+    outline-color: none;
+}
+textarea:valid {
+    outline-color: rgb(0, 128, 0);
+}
+textarea:invalid {
+    outline-color: rgb(255, 0, 0);
 }
 .contact_form input {
     width: 455px;
@@ -200,6 +228,7 @@ header {
     height: 210px;
     padding: 20px;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 input[placeholder] {
@@ -209,6 +238,7 @@ input[placeholder] {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 textarea[placeholder] {
     font-size: 14px;
     color: #bbbbbb;
