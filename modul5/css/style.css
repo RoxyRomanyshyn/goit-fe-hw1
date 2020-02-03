@@ -194,50 +194,49 @@ opacity: 0;
 
 .overley_icon_heart {
     float: left;
-    margin: 60px 4px 5px 20px;
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/heart.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
+    margin: 70px 4px 5px 34px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.98);
 }
 .overley_icon_lines {
     float: left;
-    margin: 60px 4px 5px 4px;
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/lines.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
+    margin: 70px 4px 5px 4px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.98);
 }
 .overley_icon_clock {
     float: left;
-    margin: 60px 0 5px 4px;
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/clock.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
+    margin: 70px 0 5px 4px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.98);
 }
+  
 .overley_icon_add {
     float: left;
-    margin-left: 20px;
-    width: 196px;
-    height: 60px;
-    background-image: url(../img/add\ to\ card.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
+    margin-left: 34px;
+    width: 165px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* color: rgba(255, 255, 255, 0.98); */
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+}
+.svg_image {
+    fill: #fff;
 }
 .collection_list_item:hover .overley {
-    opacity: 0.99;
+    opacity: 1;
+}
+
+button:hover {
+    background-color: #1abc9c;
 }
 .collection_list_item:hover .name_product {
     background-color: #1abc9c;
