@@ -288,18 +288,20 @@ body {
         height: 700px;
     }
     .logo_nav {
-        float: right;  
+        float: left;  
         margin: auto;
+        order: 1;
     }
     .logo {
         padding: 0;
         margin: 0;
     }
     .nav {
-       float: left;
+       float: right;
         margin: auto;
         padding: 0;
         padding-left: 50px;
+        order: 2;
     }
     .caption {
     font-size: 52px;
