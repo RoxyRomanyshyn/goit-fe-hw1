@@ -7,6 +7,7 @@ html {
     box-sizing: inherit;
 }
 body {
+    margin: 0;
     font-family: sans-serif;
     font-size: 12px;
     line-height: 21px;
@@ -122,7 +123,7 @@ body {
     background-color: #ff4e50;
 }
 .section_partners {
-    margin: 0;
+    margin: auto;
     padding-bottom: 52px;
 
 }
