@@ -1,21 +1,22 @@
 .nav__list {
-    @include flex('bwn');
-    @extend %list;
-    width: 490px;
-    font-size: 14px;
-    font-family: $main-font-stack;
-    font-weight: 400;
-    text-align: center;
+  @include flex('bwn');
+  @extend %list;
+  width: 490px;
+  font-size: 14px;
+  font-family: $main-font-stack;
+  font-weight: 400;
+  text-align: center;
 
 }
-.nav__list .nav__link {
-    color: $primary-white-color;
-    text-transform: uppercase;
-    text-decoration: none;
 
-    &:hover,
-    &:focus {
+.nav__list .nav__link {
+  color: $primary-white-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
     color: $primary-hover-color;
     border-bottom: 3px solid $primary-hover-color;
-    }
+  }
 }

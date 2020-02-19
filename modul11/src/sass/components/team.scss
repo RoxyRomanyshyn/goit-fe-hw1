@@ -1,33 +1,35 @@
 .team__about {
-    margin: 0 auto;
-    padding: 0 110px;
-    display: inline-block;
-    height: 130px;
-    font-size: 15px;
-    line-height: 24px;
-    color: $primary-grey-color;
-    font-family: $last-font-stack;
-    font-weight: 400;
-    text-align: center;
+  margin: 0 auto;
+  padding: 0 110px;
+  display: inline-block;
+  height: 130px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $primary-grey-color;
+  font-family: $last-font-stack;
+  font-weight: 400;
+  text-align: center;
 }
 
 .team__list {
-    @include flex('bwn');
-    padding: 0;
-    padding-bottom: 70px;
-    list-style: none;
+  @include flex('bwn');
+  padding: 0;
+  padding-bottom: 70px;
+  list-style: none;
 }
 
 .team__member {
-    position: relative;
+  position: relative;
 }
+
 .team__members:hover .member__pic {
-    box-shadow: 10px 10px $shadow-pic-color;
+  box-shadow: 10px 10px $shadow-pic-color;
 }
 
 .team__members:hover .team__icon {
-    opacity: 1;
+  opacity: 1;
 }
+
 .team__members:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }

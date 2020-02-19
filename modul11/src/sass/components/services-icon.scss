@@ -1,5 +1,5 @@
 .services__icon {
-&::before {
+  &::before {
     @include pseudo (inline-block, '');
     position: absolute;
     left: 26px;
@@ -9,23 +9,29 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    &--alarm::before {
-        background-image: url(../images/alarm.png);
-    }
-    &--line::before {
-        background-image: url(../images/line.png);
-    }
-    &--computer::before {
-        background-image: url(../images/pc.png);
-    }
-    &--book::before {
-        background-image: url(../images/book.png);
-    }
-    &--home::before {
-        background-image: url(../images/home.png);
-    }
-    &--image::before {
-        background-image: url(../images/image.png);
-    }
+  }
+
+  &--alarm::before {
+    background-image: url(../images/alarm.png);
+  }
+
+  &--line::before {
+    background-image: url(../images/line.png);
+  }
+
+  &--computer::before {
+    background-image: url(../images/pc.png);
+  }
+
+  &--book::before {
+    background-image: url(../images/book.png);
+  }
+
+  &--home::before {
+    background-image: url(../images/home.png);
+  }
+
+  &--image::before {
+    background-image: url(../images/image.png);
+  }
 }

@@ -1,9 +1,8 @@
 .bgd_pic {
-    height: 1000px;
-    background-image: linear-gradient(
-        to top,
-            rgba(238, 220, 119, 0.85),
-            rgba(235, 124, 122, 0.85)),
-        url(../images/Layer.jpg);
-    background-size: cover;
+  height: 1000px;
+  background-image: linear-gradient(to top,
+      rgba(238, 220, 119, 0.85),
+      rgba(235, 124, 122, 0.85)),
+    url(../images/Layer.jpg);
+  background-size: cover;
 }

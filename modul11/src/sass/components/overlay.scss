@@ -1,12 +1,11 @@
 .overlay {
-    position: absolute;
-    width: 380px;
-    height: 470px;
-    background-image: linear-gradient(
-        to top,
-        rgba(238, 220, 119, 0.85),
-        rgba(235, 124, 122, 0.85));
-    opacity: 0;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(to top,
+      rgba(238, 220, 119, 0.85),
+      rgba(235, 124, 122, 0.85));
+  opacity: 0;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }

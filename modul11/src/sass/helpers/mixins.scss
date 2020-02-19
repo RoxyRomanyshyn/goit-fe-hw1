@@ -1,33 +1,36 @@
 @mixin font-settings ($size, $height) {
-    font-size: $size;
-    line-height: $height;  
+  font-size: $size;
+  line-height: $height;
 }
 
 @mixin pseudo ($display: inline-block, $content: '') {
-    display: $display;
-    content: $content; 
+  display: $display;
+  content: $content;
 }
 
 @mixin flex($type: 'all') {
-    display: flex;
-    
-    @if $type== 'all' {
-        justify-content: space-between;
-        align-items: center;
-    }
-    @else if $type== 'center' {
-        justify-content: center;
-        align-items: center;
-    }
-    @else if $type== 'wrap' {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    @else if $type== 'row' {
-        flex-direction: row;
-    }
-    @else if $type== 'bwn' {
-        justify-content: space-between;
-    }
-}
+  display: flex;
 
+  @if $type=='all' {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @else if $type=='center' {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $type=='wrap' {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @else if $type=='row' {
+    flex-direction: row;
+  }
+
+  @else if $type=='bwn' {
+    justify-content: space-between;
+  }
+}

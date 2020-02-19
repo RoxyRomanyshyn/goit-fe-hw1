@@ -1,36 +1,37 @@
 .after_head__title {
-    margin: 0;
-    padding: 0;
-    padding-top: 90px;
-    font-size: 72px;
-    color: $primary-white-color;
-    font-family: $secondary-font-stack;
-    font-weight: 400;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  font-size: 72px;
+  color: $primary-white-color;
+  font-family: $secondary-font-stack;
+  font-weight: 400;
+  text-align: center;
 }
+
 .after_head__about {
-    margin: 0;
-    padding: 70px 70px 90px;
-    font-size: 150px;
-    line-height: 140px;
-    color: $primary-white-color;
-    font-family: $main-font-stack;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+  margin: 0;
+  padding: 70px 70px 90px;
+  font-size: 150px;
+  line-height: 140px;
+  color: $primary-white-color;
+  font-family: $main-font-stack;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .after_head__button {
-    display: block;
-    margin: auto;
-    font-size: $main-text-size;
-    color: $primary-white-color;
-    font-family: $main-font-stack;
-    font-weight: 700;
-    text-align: center;
-    width: 160px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 3px solid $primary-white-color;
-    text-transform: uppercase;
+  display: block;
+  margin: auto;
+  font-size: $main-text-size;
+  color: $primary-white-color;
+  font-family: $main-font-stack;
+  font-weight: 700;
+  text-align: center;
+  width: 160px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid $primary-white-color;
+  text-transform: uppercase;
 }
