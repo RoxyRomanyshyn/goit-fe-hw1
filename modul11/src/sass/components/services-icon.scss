@@ -1,0 +1,31 @@
+.services__icon {
+    &::before {
+    @include pseudo (inline-block, '');
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    &--alarm::before {
+        background-image: url(build/images/ALARM.png);
+    }
+    &--line::before {
+        background-image: url(build/images/LINE\ GRAPH.png);
+    }
+    &--computer::before {
+        background-image: url(build/images/COMPUTER\ _\ OK.png);
+    }
+    &--book::before {
+        background-image: url(/build/images/BOOK\ 2.png);
+    }
+    &--home::before {
+        background-image: url(/build/images/HOME.png);
+    }
+    &--image::before {
+        background-image: url(/build/images/IMAGE.png);
+    }
+}

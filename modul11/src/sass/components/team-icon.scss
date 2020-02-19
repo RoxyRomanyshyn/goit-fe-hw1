@@ -1,0 +1,35 @@
+.team__icon {
+    @include flex('row');
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    opacity: 0;
+    list-style: none;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+.team__icon a {
+    @include flex('center');
+    width: 55px;
+    height: 56px;
+    padding: 0;
+    border: none;    
+    background-color: $primary-hover-color;
+    margin-left: 1px;
+}
+
+.team__icon svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    fill: $primary-bgd-after-color;
+}
+
+.team__icon a:hover {
+    background-color: $primary-bgd-after-color;
+}
+
+.team__icon li:hover svg {
+    fill: $primary-white-color;
+}

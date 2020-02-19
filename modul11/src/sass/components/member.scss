@@ -1,0 +1,18 @@
+.member__name {
+    font-size: $main-text-size;
+    color: $primary-dark-color;
+    font-family: $main-font-stack;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.member__position {
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-grey-color;
+    font-family: $last-font-stack;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}

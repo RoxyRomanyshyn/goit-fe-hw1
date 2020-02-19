@@ -1,0 +1,48 @@
+.footer__part {
+    @include flex('bwn');
+    margin-top: 10px;
+}
+
+.photo__section::after {
+    @include pseudo (block, '');
+    width: 1200px;
+    height: 1px;
+    background-color: $secondary-grey-color;
+}
+
+.footer__text {
+    font-size: $main-text-size;
+    color: $primary-dark-color;
+    font-family: $main-font-stack;
+    font-weight: 400;
+    text-align: center;
+}
+
+span {
+    color: $primary-bgd-after-color;
+}
+
+.subscribe {
+    width: 150px;
+    height: 40px;
+    background-color: $shadow-pic-color;
+    color: $primary-white-color;
+    text-transform: uppercase;
+    border: none;
+}
+
+.placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: $secondary-grey-color;
+    font-family: $last-font-stack;
+    font-weight: 300;
+    font-style: italic;
+}
+
+input {
+    width: 230px;
+    height: 40px;
+    background-color: $primary-white-color;
+    border: 1px solid $secondary-grey-color;
+}

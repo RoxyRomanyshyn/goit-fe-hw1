@@ -1,0 +1,25 @@
+.services__item {
+    position: relative;
+    width: 380px;
+    padding-left: 90px;
+}
+
+.services__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: $main-text-size;
+    color: $primary-dark-color;
+    font-family: $main-font-stack;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services__about {
+    margin: 0;
+    width: 290px;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-grey-color;
+    font-family: $last-font-stack;
+    font-weight: 400;
+}

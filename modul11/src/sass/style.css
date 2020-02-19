@@ -1,0 +1,236 @@
+/* .services__item--alarm::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    @include pseudo ($display: inline-block, $content: '')
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/ALARM.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services__item--line::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/LINE GRAPH.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services__item--computer::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/COMPUTER OK.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services__item--book::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/BOOK 2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services__item--home::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/HOME.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services__item--image::before {
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-image: url(../images/IMAGE.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+/* team */
+.team__about {
+    margin: 0 auto;
+    padding: 0 110px;
+    display: inline-block;
+    height: 130px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999;
+    font-family: $last-font-stack;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team__list {
+    @include flex('bwn');
+    padding: 0;
+    padding-bottom: 70px;
+    list-style: none;
+}
+
+.team__member {
+    position: relative;
+}
+/* team-icon */
+.team__icon {
+    @include flex('row');
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    opacity: 0;
+    list-style: none;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+.team__icon a {
+    @include flex('center');
+    width: 55px;
+    height: 56px;
+    padding: 0;
+    border: none;    
+    background-color: $primary-hover-color;
+    margin-left: 1px;
+}
+
+.team__icon svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    fill: $secondary-grey-color;
+}
+
+.team__members:hover .member__pic {
+    box-shadow: 10px 10px #95e1d3;
+}
+
+.team__members:hover .team__icon {
+    opacity: 1;
+}
+
+.team__icon a:hover {
+    background-color: $secondary-grey-color;
+}
+
+.team__icon li:hover svg {
+    fill: $primary-white-color;
+}
+
+.team__members:hover .overlay {
+    opacity: 1;
+}
+/* services-icon */
+.services__icon::before {
+    @include pseudo (inline-block, '');
+    position: absolute;
+    left: 26px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services__icon--alarm::before {
+    background-image: url(//src/images/ALARM.png);
+}
+
+.services__icon--line::before {
+    background-image: url(//src/images/LINE\ GRAPH.png);
+}
+
+.services__icon--computer::before {
+    background-image: url(//src/images/COMPUTER\ _\ OK.png);
+}
+
+.services__icon--book::before {
+    background-image: url(//src/images/BOOK\ 2.png);
+}
+
+.services__icon--home::before {
+    background-image: url(//src/images/HOME.png);
+}
+
+.services__icon--image::before {
+    background-image: url(//src/images/IMAGE.png);
+}
+/* member */
+.member__name {
+    font-size: 14px;
+    color: #333;
+    font-family: $main-font-stack;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.member__position {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999;
+    font-family: $last-font-stack;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .services__item--alarm::before {
+        background-image: url(../img/ALARM@2x.png);
+    }
+
+    .services__item--line::before {
+        background-image: url(../img/LINE\ GRAPH@2x.png);
+    }
+
+    .services__item--computer::before {
+        background-image: url(../img/COMPUTER\ _\ OK@2x.png);
+    }
+
+    .services__item--book::before {
+        background-image: url(../img/BOOK\ 2@2x.png);
+    }
+
+    .services__item--home::before {
+        background-image: url(../img/HOME@2x.png);
+    }
+
+    .services__item--image::before {
+        background-image: url(../img/IMAGE@2x.png);
+    }
+}
