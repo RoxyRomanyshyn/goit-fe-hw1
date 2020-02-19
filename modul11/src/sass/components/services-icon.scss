@@ -11,21 +11,21 @@
     background-size: cover;
     }
     &--alarm::before {
-        background-image: url(build/images/ALARM.png);
+        background-image: url(../images/alarm.png);
     }
     &--line::before {
-        background-image: url(build/images/LINE\ GRAPH.png);
+        background-image: url(../images/line.png);
     }
     &--computer::before {
-        background-image: url(build/images/COMPUTER\ _\ OK.png);
+        background-image: url(../images/pc.png);
     }
     &--book::before {
-        background-image: url(/build/images/BOOK\ 2.png);
+        background-image: url(../images/book.png);
     }
     &--home::before {
-        background-image: url(/build/images/HOME.png);
+        background-image: url(../images/home.png);
     }
     &--image::before {
-        background-image: url(/build/images/IMAGE.png);
+        background-image: url(../images/image.png);
     }
 }

@@ -1,6 +1,6 @@
 .nav__list {
     @include flex('bwn');
-    @extend %link;
+    @extend %list;
     width: 490px;
     font-size: 14px;
     font-family: $main-font-stack;

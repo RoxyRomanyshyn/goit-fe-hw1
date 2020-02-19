@@ -3,16 +3,16 @@
  */
 
 @import 'helpers/veriables';
-@import 'helpers/placeholders';
+@import 'helpers/placeholders.scss';
 @import 'helpers/fonts';
 @import 'helpers/mixins';
 @import 'normalize.scss';
 @import 'base.scss';
 
-@import 'components/bgd-pic';
-@import 'components/container';
-@import 'components/header';
-@import 'components/nav';
+@import 'components/bgd-pic.scss';
+@import 'components/container.scss';
+@import 'components/header.scss';
+@import 'components/nav.scss';
 @import 'components/nav-logo.scss';
 @import 'components/nav-list.scss';
 @import 'components/after-head.scss';
@@ -23,5 +23,5 @@
 @import 'components/team.scss';
 @import 'components/services-icon.scss';
 @import 'components/team-icon.scss';
-@import 'components/member';
+@import 'components/member.scss';
 
